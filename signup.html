@@ -1,0 +1,314 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+        <style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+ 
+    
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  
+  display: flex;
+ 
+  margin: 0 -16px;
+}
+
+.col1,
+.col2,
+.col3 {
+  padding: 0 16px;
+}
+
+.cont {
+  background-color: #f2f2f2;
+  padding: 5px 10px 43px 20px;
+  
+}
+
+.col2>input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  
+}
+            .col2>select {
+  width: 50%;
+  margin-bottom: 20px;
+  padding: 5px;
+  
+}
+
+            
+.col2>input[type=password] {
+ width:100%;
+	height:25px;
+	border: 1px solid white;
+  border-radius: 3px;
+	padding-left:4px;
+	
+	margin-bottom:10px;
+	margin-top:5px;
+	font-family:'Gothic A1';
+	font-size:16px;
+    padding:12px;
+}
+
+
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btna {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btna:hover {
+  background-color: #0b8256;
+}
+
+
+
+</style>
+    </head>
+    <body>
+    
+    <div class="div1">
+    <a name="home"> <div class="header"></a>
+			
+			         <table>
+				        <tr >
+					       <td class="header_logo"><img src="images/logo.png" height="35px" width="20px"></td>
+                            <td class="header_name"><a href="index.html#home"> Mero Music</a></td>
+					
+					       <td class="language">
+					
+					       English-US <img src="images/usa_flag.png" height="12px" width="20px" onclick="f11()" style="cursor: pointer;"> &nbsp &nbsp 
+					
+					           Nepal <img src="images/nepal_flag.png" height="15px" width="20px" align="top" onclick="f22()" style="cursor: pointer;"> &nbsp &nbsp 
+					
+					           English-UK <img src="images/uk_flag.png" height="12px" width="20px" onclick="f33()" style="cursor: pointer;">
+					
+					       </td>
+			
+			
+			         </table>
+			
+			
+				    <hr class="a1">
+            </div>
+			
+<div class="menubar">
+			
+			     <table>
+				        <tr >
+					           <td class="bars"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></td>
+                            <td class="menu1"><a href="index.html#home"> Home</a></td>
+                            <td class="menu1"><a href="index.html#abtus">About Us</a></td>
+                            <td class="menu1"><a href="index.html#pln">Plans</a></td>
+					           <td class="menu2"><i class="fa fa-user-o" aria-hidden="true"></i>  Log In &nbsp <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="login-form">
+					   <form target="_self" action="login.html">
+					       <i class="fa fa-user" aria-hidden="true"></i> Username
+				    <div class="credentials">
+						<input type="text" placeholder="Enter Username" required>
+				    </div>
+					       <i class="fa fa-key" aria-hidden="true"></i> Password
+				    <div class="credentials">
+						<input type="password" placeholder="Enter Password" required>
+				    </div>
+						
+				    <div class="credentials1">
+						<input type="submit">
+				    </div>
+						
+				    <div>
+						<a href="#" style="text-decoration:none;position:reative;font-size:12px;color:gray;">Forgot Your Password?</a>
+				    </div>
+						
+					   <td class="menu3"><a href="signup.html"><i class="fa fa-user-plus" aria-hidden="true"></i>  Register</a>
+					</form>
+					</div>
+					   </td>
+				    </tr>
+			 </table>
+                
+			     </div>
+        <div class="row">
+  <div class="col3">
+    <div class="cont">
+      <form action="index.html" onsubmit="return validateform()" name="myform" >
+          <fieldset>
+              <legend><span style="font-size:30px;">Sign Up</span></legend>
+
+        <div class="row">
+          <div class="col2">
+            <h3>Basic Information</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="name" placeholder="Srijan Pokharel" required>
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="pokharelsrj@gmail.com" required>
+            <label for="adr"><i class="fa fa-address-card-o"></i> Username</label>
+            <input type="text" id="adr" name="username" placeholder="pokharelsrj" required>
+            <label for="password"><i class="fa fa-key"></i> Password</label>
+            <input type="password" id="pw" name="password" placeholder="Password" required>
+
+            <div class="row">
+              <div class="col2">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="HP" required>
+              </div>
+              <div class="col2">
+                <label for="Country">Zip</label>
+                <input type="text" id="cntry" name="cntry" placeholder="India" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="col2">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+                <input type="radio" name="card" checked>
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+                 <input type="radio" name="card">
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+                 <input type="radio" name="card">
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                 <input type="radio" name="card">
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Srijan Pokharel" required>
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444" required maxlength="19">
+            <label for="expmonth">Exp Month</label>
+            <select>
+              <option value="Jan">January</option>
+                <option value="Feb">February</option>
+                <option value="Mar">March</option>
+                <option value="Apr">April</option>
+                <option value="May">May</option>
+                <option value="Jun">June</option>
+                <option value="Jul">July</option>
+                <option value="Aug">August</option>
+                <option value="Sept">September</option>
+                <option value="Oct">October</option>
+                <option value="Nov">November</option>
+                <option value="Dec">December</option>
+              </select>
+              <br>
+
+            <div class="row">
+              <div class="col2">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018" required maxlength="4">
+              </div>
+              <div class="col2">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352" required maxlength="3">
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr" required> I agree all terms and conditions
+        </label>
+        <input type="submit" value="Sign Up" class="btna">
+              </fieldset>
+              
+      </form>
+    </div>
+  </div>
+
+
+</div>
+        
+      	<script>  
+function validateform(){  
+ 
+	var password=document.myform.password.value;  
+	 var name=document.myform.name.value;   
+    var card=document.myform.cardnumber.value;
+    var exp=document.myform.expyear.value;
+    var cvv=document.myform.cvv.value;
+ if(password.length<6){  
+	  alert("Password must be at least 6 characters long.");  
+	  return false;  
+	  }  
+    if(card.length<19)
+        {
+            alert("Invalid Card Number.");
+            return false;
+        }
+    if(exp.length<4)
+        {
+            alert("Invalid Expiry Year.");
+            return false;
+        }
+    if(cvv.length<3)
+        {
+            alert("Invalid CVV.");
+            return false;
+        }
+    
+	}  
+            
+            function f11()
+           {
+               alert("You've Selected Region : USA.")
+           }
+            function f22()
+           {
+               alert("You've Selected Region : Nepal.")
+           }
+            function f33()
+           {
+               alert("You've Selected Region : UK.")
+           }
+	</script>  
+
+        <div class="div2">
+		
+		
+            <p class="foot1"> <a href="index.html#home">HOME</a> &nbsp &nbsp &nbsp	 <a href="index.html#abtus">ABOUT US</a> &nbsp &nbsp &nbsp <a href="index.html#pln">PLANS</a> &nbsp &nbsp &nbsp <a href="tou.html">TERMS OF USE</a> &nbsp &nbsp &nbsp <a href="signup.html">SIGN UP</a></p>
+
+		<hr class="hr1">
+		<br>
+            <p class="foot2"><a href="https://www.facebook.com/pokharelsrj" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a> &nbsp &nbsp &nbsp &nbsp<a href="https://twitter.com/pokharelsrj" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.instagram.com/srijan_pokharel/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.youtube.com/user/SuperSrijan1/" target="_blank"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.linkedin.com/in/pokharelsrj" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+		<br><br>
+		<p class="foot3">We're based in Kathmandu, Nepal. </p>
+		<p class="foot4"> We work with clients from all over the world. Get in touch with us!</p>
+		
+		<br><br>
+		
+		<p class="foot5"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i><font color="#ff4d4d"><a href="mailto:pokharelsrj@gmail.com?Subject=Hello%20there" target="_top" style="text-decoration: none; color:#ff4d4d;"> pokharelsrj@gmail.com</a></font> &nbsp &nbsp &nbsp <i class="fa fa-phone fa-1x" aria-hidden="true"></i> <font color="	#D3D3D3">(+9771)6634755</font> &nbsp &nbsp &nbsp <i class="fa fa-home" aria-hidden="true"></i> <font color="#D3D3D3"> Lokanthali, Bhaktapur</font>
+		
+		<hr class="hr1">
+		<br>
+            <p class="foot6"> &copy 2022 Srijan Pokharel. All Rights Reserved | Created By Srijan Pokharel</p>
+		</div>
+    </body>
+</html>

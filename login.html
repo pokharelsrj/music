@@ -1,0 +1,371 @@
+<html>
+    <head>
+        <title>User 1</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+        <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        
+       <style>
+           .sbar{
+       padding-left:0px;
+           }
+           .sbar input[type="search"]
+           {
+               padding: 7px;
+               width:400px;
+               border-radius: 3px;
+           }
+           .sbtn button{
+               padding: 8px;
+               cursor: pointer;
+           }
+          td.menu20{
+		font-family:'Alegreya Sans SC';
+		font-size:25px;
+		padding-left:100px;
+			}
+           
+           td.menu20:hover .login-form1{
+	       display:block;
+           }
+           
+           a{
+               text-decoration: none;
+           }
+           #demo{
+               padding-left: 25px;
+           }
+           .inside{
+               font-family: arial;
+           }
+           .login-form1{
+	display:none;
+	position:absolute;
+	width:230px;
+	height:auto;
+	background:#fff;
+	top:40px;
+	border-radius:4px;
+	border:1px solid black;
+	
+	
+}
+
+.login-form1>form{
+width:230px;
+margin:25px auto;
+font-size:16px;
+font-family: sans-serif,Arial;
+color:gray;
+
+
+}
+
+           
+.login-form1 hr
+           {
+         color:gray;
+          
+            }
+
+           
+           
+           
+           
+           
+           /* Nav bar */
+           
+           .topnav {
+  overflow: hidden;
+  padding-left: 190px;
+}
+
+.topnav a {
+    font-family: arial;
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 19px 30px;
+  text-decoration: none;
+  font-size: 30px;
+  border-bottom: 3px solid transparent;
+}
+
+.topnav a:hover {
+  border-bottom: 3px solid black;
+}
+
+.topnav a.active {
+  border-bottom: 3px solid #9b0319;
+}
+           
+           
+           
+/* Image */
+           
+           
+           .column {
+             
+  float: left;
+  width: 18%;
+  padding-bottom: 40px;
+}
+           .row{
+               padding-left: 190px;
+               
+           }
+           
+           
+           
+           div.musicbar{
+               position: sticky; 
+               margin:0px;
+               position: -webkit-sticky;
+               z-index: 500;
+           }       
+
+           .column img:hover{
+               cursor: pointer;
+           }
+        </style>
+    </head>
+    <body>
+    
+    <div class="div1">
+    <a name="home"> <div class="header"></a>
+			
+			         <table>
+				        <tr >
+					       <td class="header_logo"><img src="images/logo.png" height="35px" width="20px"></td>
+                            <td class="header_name"><a href="index.html#home"> Mero Music</a></td>
+					
+					       <td class="language">
+					
+					         English-US <img src="images/usa_flag.png" height="12px" width="20px" onclick="f11()" style="cursor: pointer;"> &nbsp &nbsp 
+					
+					           Nepal <img src="images/nepal_flag.png" height="15px" width="20px" align="top" onclick="f22()" style="cursor: pointer;"> &nbsp &nbsp 
+					
+					           English-UK <img src="images/uk_flag.png" height="12px" width="20px" onclick="f33()" style="cursor: pointer;">
+					
+					       </td>
+			
+			
+			         </table>
+			
+			
+				    <hr class="a1">
+            </div>
+			
+<div class="menubar">
+			
+			     <table>
+				        <tr >
+					           <td class="bars"><i class="fa fa-bars fa-2x" aria-hidden="true"></i></td>
+                            <td class="menu1"><a href="index.html#home"> Home</a></td>
+                            
+					       <td class="sbar"><input type="search" placeholder="Search..."></td>
+                            <td class="sbtn"><button type="submit" onclick="f3()"><i class="fa fa-search"></i></button></td>
+                            
+                            
+                            <td class="menu20"><i class="fa fa-user-circle-o fa-1x" aria-hidden="true"></i> Welcome, User 1   &nbsp <i class="fa fa-angle-down" aria-hidden="true"></i>
+                <div class="login-form1">
+					<div class="inside" style="text-decoration:none;position:reative;font-size:14px;color:black; padding-left: 20px;padding-right: 20px;font-weight: bold;">
+                        <br>
+                    Your Playlists<br><br>
+                        <a style="text-decoration: none; color:black;"href="playlist.html#1"><span style="font-size: 10px;font-weight: normal; padding-left: 25px;">My Playlist 1</span></a><br><br>
+                        <a style="text-decoration: none; color:black;"href="playlist.html#2"><span style="font-size: 10px;font-weight: normal; padding-left: 25px;">Top Hits</span></a><br><br>
+                        <a style="text-decoration: none; color:black;"href="playlist.html#3"><span style="font-size: 10px;font-weight: normal; padding-left: 25px;">Srijan's Playlist</span></a><br>
+                        <hr>
+                       <a style="text-decoration: none; color:black;"href="likes.html">Likes</a>
+                        <hr>
+                        Settings
+                        <hr>
+                        <span style="font-size: 16px; font-weight: bold;"><a style="text-decoration: none; color:black;"href="index.html">Log Out</a></span> 
+                    </div>
+					<form>	
+				    
+					   
+					</form>
+					</div>
+					   </td>
+                            <td style="padding-left: 105px;"><i class="fa fa-bell fa-1x" aria-hidden="true" onclick="f4()" style="cursor: pointer;"></i></td>
+                            <td style="padding-left: 25px;"><i class="fa fa-envelope fa-1x" aria-hidden="true" onclick="f5()" style="cursor: pointer;"></i></td>
+				    </tr>
+			 </table>
+                
+			     
+        
+        
+        
+        <div style="margin-left: 280px;">
+    <audio controls="controls" style="width:60%;" id="audio" src="" preload="none">
+          </div>
+           <marquee width="60%" scrollamount="8" direction="right"><p style="color: black; padding-left: 190px; font-family: arial;" id="roll">Not Playing any Song</p><br></marquee>
+            
+        
+                
+                
+             
+        
+        </div>
+
+    
+        <div class="dnld" style="padding-bottom: 350px;background-color: white;">
+                <div class="topnav">
+                    <a class="active" href="#">Overview</a>
+                    <a href="likes.html">Likes</a>
+                    <a href="playlist.html">Playlists</a>
+                </div>
+                <br><br>
+            
+               
+            
+            <span style="padding-left: 190px; font-family:'Gothic A1';font-size: 20px; ">Recently played</span>
+            <br><br>
+
+         
+                <div class="row">
+                    <div class="column">
+                        <img id="images" src="images/shripach.jpg" alt="sacar" height="200px" width="200px" onclick="playAudio('music/sacar.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                        
+                    </div>
+                    <div class="column">
+                        <img id="images" src="images/yb.jpg" alt="yb" height="200px" width="200px" onclick="playAudio('music/yb.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/mayama.jpg" alt="Maya Ma" height="200px" width="200px" onclick="playAudio('music/skc.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/closer.png" alt="Closer" height="200px" width="200px" onclick="playAudio('music/closer.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    <div class="column">
+                        <img src="images/blue.jpg" alt="Blues" height="200px" width="200px" onclick="playAudio('music/lalala.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                        
+                    </div>
+                    
+               </div>
+            
+           
+            <span style="padding-left: 190px; font-family:'Gothic A1';font-size: 20px;">Popular Nepali Bands</span>
+            <br><br>
+
+        
+                <div class="row">
+                    <div class="column">
+                        <img src="images/albatross.jpg" alt="Albatross" height="200px" width="200px" onclick="playAudio('music/khasekatara.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    <div class="column">
+                        <img src="images/1974.jpg" alt="1974 AD" height="200px" width="200px" onclick="playAudio('music/timi.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/tribalrain.jpg" alt="Tribal Rain" height="200px" width="200px" onclick="playAudio('music/narisauna.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/nepathya.jpeg" alt="Nepathya" height="200px" width="200px" onclick="playAudio('music/resham.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    <div class="column">
+                        <img src="images/ranr.jpg" alt="RANR" height="200px" width="200px" onclick="playAudio('music/ranr.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+               </div>
+            
+            <span style="padding-left: 190px; font-family:'Gothic A1';font-size: 20px;">Popular English Bands</span>
+            <br><br>
+
+        
+                <div class="row">
+                    <div class="column">
+                        <img src="images/gnr.jpg" alt="GNR" height="200px" width="200px" onclick="playAudio('music/scom.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    <div class="column">
+                        <img src="images/grnday.jpg" alt="GreenDay" height="200px" width="200px" onclick="playAudio('music/greenday.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/metallica.jpg" alt="Metallica" height="200px" width="200px" onclick="playAudio('music/metallica.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                <div class="column">
+                        <img src="images/eagles.jpg" alt="Eagles" height="200px" width="200px" onclick="playAudio('music/hotel.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    <div class="column">
+                        <img src="images/beatles.jpg" alt="Beatles" height="200px" width="200px" onclick="playAudio('music/beatles.mp3')" onmousedown="f1(this)" onmouseup="f2(this)">
+                    </div>
+                    
+               </div>
+        </div>
+        
+    
+        
+       <script>
+  function playAudio(url) {
+          
+  var a = document.getElementById('audio');
+      a.src=url;
+      document.getElementById('roll').innerHTML="Now Playing: "+url;
+  a.play();
+       
+}
+           
+           function f1(x)
+           {
+               x.style.height="230px";
+               x.style.width="230px";
+           }
+           
+           function f2(x)
+           {
+               x.style.height="200px";
+               x.style.width="200px";
+           }
+           
+           
+           function f3()
+           {
+               alert("No Result Found");
+           }
+           
+            function f11()
+           {
+               alert("You've Selected Region : USA.")
+           }
+            function f22()
+           {
+               alert("You've Selected Region : Nepal.")
+           }
+            function f33()
+           {
+               alert("You've Selected Region : UK.")
+           }
+           function f4()
+           {
+               alert("No New Notifications.");
+           }
+           
+           function f5()
+           {
+               alert("No New Mails.");
+           }
+   </script>
+        
+        
+        <div class="div2">
+		
+		
+            <p class="foot1"> <a href="index.html#home">HOME</a> &nbsp &nbsp &nbsp	 <a href="index.html#abtus">ABOUT US</a> &nbsp &nbsp &nbsp <a href="index.html#pln">PLANS</a> &nbsp &nbsp &nbsp <a href="tou.html">TERMS OF USE</a> &nbsp &nbsp &nbsp <a href="signup.html">SIGN UP</a></p>
+
+		<hr class="hr1">
+		<br>
+            <p class="foot2"><a href="https://www.facebook.com/pokharelsrj" target="_blank"><i class="fa fa-facebook-square fa-3x" aria-hidden="true"></i></a> &nbsp &nbsp &nbsp &nbsp<a href="https://twitter.com/pokharelsrj" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.instagram.com/srijan_pokharel/" target="_blank"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.youtube.com/user/SuperSrijan1/" target="_blank"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a>&nbsp &nbsp &nbsp &nbsp<a href="https://www.linkedin.com/in/pokharelsrj" target="_blank"><i class="fa fa-linkedin fa-3x" aria-hidden="true"></i></a>
+		<br><br>
+		<p class="foot3">We're based in Kathmandu, Nepal. </p>
+		<p class="foot4"> We work with clients from all over the world. Get in touch with us!</p>
+		
+		<br><br>
+		
+		<p class="foot5"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i><font color="#ff4d4d"><a href="mailto:pokharelsrj@gmail.com?Subject=Hello%20there" target="_top" style="text-decoration: none; color:#ff4d4d;"> pokharelsrj@gmail.com</a></font> &nbsp &nbsp &nbsp <i class="fa fa-phone fa-1x" aria-hidden="true"></i> <font color="#D3D3D3">(+9771)6634755</font> &nbsp &nbsp &nbsp <i class="fa fa-home" aria-hidden="true"></i> <font color="#D3D3D3"> Lokanthali, Bhaktapur</font>
+		
+		<hr class="hr1">
+		<br>
+            <p class="foot6"> &copy 2022 Srijan Pokharel. All Rights Reserved | Created By Srijan Pokharel</p>
+		</div>
+    </body>
+</html>
