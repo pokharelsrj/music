@@ -19,7 +19,9 @@ body{
     margin:0px;
 }
 /* Index Page */
-
+div.div3{
+    	
+}
 div.div1{
 		
 		
@@ -202,11 +204,10 @@ img.ab{
     border-radius: 18px;
 }
 .vl1 {
-    position: relative;
-    
+    position: absolute;
+    left: 950px;
   border-left: 1px solid black;
   height: 300px;
-    margin: -300px 0 0 -200px;
 }
 				
 div.menubar {
